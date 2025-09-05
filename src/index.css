@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Import font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap');
+
+/* Set font ke root biar gampang dipanggil */
+@layer base {
+  :root {
+    --font-figtree: "Figtree", sans-serif;
+  }
+
+  body {
+    font-family: var(--font-figtree);
+  }
+}
+
+/* Kalau mau class custom font juga */
+@layer utilities {
+  .font-figtree {
+    font-family: var(--font-figtree);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
